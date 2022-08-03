@@ -9,7 +9,9 @@ def billing_doc():
 
     for product in products:
         tax=calculatetax(product["Bill"],tax_rate)
-        print(f"{product['Name']}\t{product['Bill']}\t{'Tax'}")
+        print(f"{product['Name']}\t{product['Bill']}\t{tax}")
         
 
-print(__name__)        
+#print(__name__)       
+if __name__ == '__main__':
+    billing_doc()
